@@ -1052,3 +1052,4 @@ class DocumentConverter:
                 self._unload_input_document(in_doc)
 
         return conv_res
+# measurement no-op (fork only)
