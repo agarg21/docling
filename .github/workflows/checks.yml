@@ -212,6 +212,9 @@ jobs:
           install_system_deps: "true"
           cache_models: "true"
 
+      - name: CPU info (fork measurement only)
+        run: lscpu | grep -E 'Model name|^CPU\(s\)'
+
       - name: Run core test suite
         env:
           TACH_BASE_REF: ${{ inputs.tach_base_ref }}
